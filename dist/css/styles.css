@@ -10956,6 +10956,14 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
+section.resume-section img {
+  max-height: 180px;
+  width: auto;
+  margin: auto;
+}
+section.resume-section div.background {
+  background-color: black;
+}
 
 @media (min-width: 768px) {
   section.resume-section {

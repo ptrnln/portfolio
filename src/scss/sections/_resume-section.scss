@@ -14,6 +14,16 @@ section.resume-section {
     .resume-section-content {
         width: 100%;
     }
+
+    img {
+        max-height: 180px;
+        width: auto;
+        margin: auto;
+    }
+    
+    div.background {
+        background-color: black;
+    }
 }
 
 @include media-breakpoint-up(md) {

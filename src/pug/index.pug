@@ -36,6 +36,8 @@ html(lang='en')
                 ul.navbar-nav
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#about') About
+                    li.nav-item 
+                        a.nav-link.js-scroll-trigger(href='#projects') Projects
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#experience') Experience
                     li.nav-item
@@ -73,6 +75,26 @@ html(lang='en')
 
             hr.m-0
 
+            // Projects
+            section#projects.resume-section
+                .resume-section-content
+                    h2.mb-5 Projects
+
+                    .d-flex.flex-column.justify-content-between.m-5
+                            .card.m-5
+                                div.background.d-flex.flex-row.justify-content-center
+                                    img.card-img-top(src="assets/img/WaveCave_logo.svg")
+                                h3.m-2
+                                    a(href='http://wavecave-2rxw.onrender.com/') WaveCave
+                                p.m-2
+                                    | A full-stack clone of the popular music-sharing social media platform SoundCloud.
+                            .card.m-5
+                                div.background.d-flex.flex-row.justify-content-center
+                                    img.card-img-top(src="assets/img/TeamMates_logo.svg")
+                                h3.m-2
+                                    a(href='http://teammates.onrender.com/') TeamMates
+                                p.m-2
+                                    | A sports-centered social media platform that allows users to organize and join games/tournaments for various sports.
             // Experience
             section#experience.resume-section
                .resume-section-content
