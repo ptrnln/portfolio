@@ -10956,7 +10956,7 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
-section.resume-section img.project-img {
+img.project-img {
   max-height: 180px;
   width: auto;
   margin: auto;
@@ -10968,6 +10968,9 @@ section.resume-section div.background {
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
+  }
+  img.project-img {
+    max-height: 120px;
   }
 }
 @media (min-width: 992px) {

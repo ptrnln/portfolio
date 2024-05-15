@@ -10956,18 +10956,24 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
-section.resume-section img.project-img {
+section.resume-section div.background {
+  background-color: black;
+}
+
+img.project-img {
   max-height: 180px;
   width: auto;
   margin: auto;
-}
-section.resume-section div.background {
-  background-color: black;
 }
 
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
+  }
+}
+@media (max-width: 767.98px) {
+  img.project-img {
+    max-height: 100px;
   }
 }
 @media (min-width: 992px) {

@@ -15,21 +15,30 @@ section.resume-section {
         width: 100%;
     }
 
-    img.project-img {
-        max-height: 180px;
-        width: auto;
-        margin: auto;
-    }
+    
     
     div.background {
         background-color: black;
     }
 }
 
+img.project-img {
+    max-height: 180px;
+    width: auto;
+    margin: auto;
+}
+
 @include media-breakpoint-up(md) {
     section.resume-section {
         min-height: 100vh;
     }
+}
+
+@include media-breakpoint-down(md) {
+    img.project-img {
+        max-height: 100px;
+    }
+
 }
 
 @include media-breakpoint-up(lg) {
