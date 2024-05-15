@@ -10956,7 +10956,7 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
-section.resume-section img {
+section.resume-section img.project-img {
   max-height: 180px;
   width: auto;
   margin: auto;
