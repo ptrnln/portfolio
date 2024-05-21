@@ -10978,6 +10978,7 @@ img.project-img {
     max-height: 100px;
   }
 }
+
 @media (min-width: 992px) {
   section.resume-section {
     padding-left: 3rem;
