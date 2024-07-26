@@ -38,3 +38,46 @@ p.lead {
     font-weight: 500;
     font-size: 1.5rem;
 }
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --bs-body-bg: #212529;
+      --bs-primary: #6610f2;
+    }
+    div.card {
+        --bs-card-bg: #2f363d;
+        --bs-card-color: #7d868f;
+    }
+    h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+        color: #f8f9fa;
+    }
+}
+
+// .card-group > .card:has(+ .card) div.background {
+//     border-radius: 0.3rem 0 0 0;
+// }
+// .card-group .card:not(:has(+ .card)) div.background {
+//     border-radius: 0 0.3rem 0 0;
+// }
+// .card-group > .card:not(:has(+ .card)) div.background {
+//     border-radius: 0.3rem 0.3rem 0 0;
+// }
+@media screen and (max-width: 575px) {
+    .card div.background{
+        border-radius: 0.3rem 0.3rem 0 0;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .card:first-of-type div.background {
+        border-radius: 0.3rem 0 0 0;
+    }
+    .card:last-of-type div.background {
+        border-radius: 0 0.3rem 0 0;
+    }
+    .card:first-of-type:last-of-type div.background {
+        border-radius: 0.3rem 0.3rem 0 0;
+    }
+    
+}

@@ -80,23 +80,29 @@ html(lang='en')
                 .resume-section-content
                     h2.mb-5 Skills
                     .subheading.mb-3 Programming Languages & Tools
-                    ul.list-inline.dev-icons
-                        li.list-inline-item
-                            i.fab.fa-html5
-                        li.list-inline-item
-                            i.fab.fa-css3-alt
-                        li.list-inline-item
+                    ul.list-inline.dev-icons                  
+                        li.list-inline-item(alt='JavaScript' title='JavaScript')
                             i.fab.fa-js-square
-                        li.list-inline-item
+                        li.list-inline-item(alt='HTML' title='HTML')
+                            i.fab.fa-html5
+                        li.list-inline-item(alt='CSS' title='CSS')
+                            i.fab.fa-css3-alt
+                        li.list-inline-item(alt='AWS' title='AWS')
+                            i.fab.fa-aws
+                        li.list-inline-item(alt='Reactjs' title='Reactjs')
                             i.fab.fa-react
-                        li.list-inline-item
+                        li.list-inline-item(alt='Python' title='Python')
+                            i.fab.fa-python
+                        li.list-inline-item(alt='Nodejs' title='Nodejs')
                             i.fab.fa-node-js
-                        li.list-inline-item
+                        li.list-inline-item(alt='Sass' title='Sass')
                             i.fab.fa-sass
-                        li.list-inline-item
+                        li.list-inline-item(alt='NPM' title='NPM')
                             i.fab.fa-npm
-                        li.list-inline-item
+                        li.list-inline-item(alt='Figma' title='Figma')
                             i.fab.fa-figma
+                        li.list-inline-item(alt='GitHub' title='GitHub')
+                            i.fab.fa-github
                     .subheading.mb-3 Workflow
                     ul.fa-ul.mb-0
                         li
@@ -123,23 +129,52 @@ html(lang='en')
                 .resume-section-content
                     h2.mb-5 Projects
 
-                    .d-flex.flex-column.flex-md-row.justify-content-between.m-5
-                        .card.m-md-5.m-sm-3.flex-grow-1
+                    //- .d-flex.flex-row.flex-md-column.justify-content-between.m-5
+                    //- 
+                    //- .d-flex.flex-md-column.flex-lg-row.row-cols-2.m-5
+                        .card.m-5
                             div.background.d-flex.flex-row.justify-content-center
                                 img.card-img-top.project-img(src="assets/img/WaveCave_logo.svg")
-                            h3.m-2
-                                a(href='http://wavecave-2rxw.onrender.com/') WaveCave
-                            p.m-2
-                                | A full-stack clone of the popular music-sharing social media platform SoundCloud.
+                            .card-body
+                                h3.m-2
+                                    a(href='http://wavecave.ph4se.dev/') WaveCave
+                                p.m-2
+                                    | A full-stack clone of the popular music-sharing social media platform SoundCloud.
 
-                        .flex-md-shrink-4
-                            .card.m-5
+                    //-     .card.m-5
+                    //-         div.background.d-flex.flex-row.justify-content-center
+                    //-             img.card-img-top.project-img(src="assets/img/TeamMates_logo.svg")
+                    //-         h3.m-2
+                    //-             a(href='http://teammates.onrender.com/') TeamMates
+                    //-         p.m-2
+                    //-             | A sports-centered social media platform that allows users to organize and join games/tournaments for various sports.
+                        
+                    //-     .card.m-5
+                    //-         div.background.d-flex.flex-row.justify-content-center
+                    //-             img.card-img-top.project-img(src="assets/img/TeamMates_logo.svg")
+                    //-         h3.m-2
+                    //-             a(href='http://teammates.onrender.com/') TeamMates
+                    //-         p.m-2
+                    //-             | A sports-centered social media platform that allows users to organize and join games/tournaments for various sports.
+                    .container-fluid
+                        .card-group
+                            .card
+                                div.background.d-flex.flex-row.justify-content-center
+                                    img.card-img-top.project-img(src="assets/img/WaveCave_logo.svg")
+                                .card-body
+                                    h3.m-2.card-header
+                                        a(href='http://wavecave.ph4se.dev/') WaveCave
+                                    p.m-2
+                                        | A full-stack clone of the popular music-sharing social media platform SoundCloud.
+                            
+                            .card
                                 div.background.d-flex.flex-row.justify-content-center
                                     img.card-img-top.project-img(src="assets/img/TeamMates_logo.svg")
-                                h3.m-2
-                                    a(href='http://teammates.onrender.com/') TeamMates
-                                p.m-2
-                                    | A sports-centered social media platform that allows users to organize and join games/tournaments for various sports.
+                                .card-body
+                                    h3.m-2.card-header
+                                        a(href='http://teammates.onrender.com/') TeamMates
+                                    p.m-2
+                                        | A sports-centered social media platform that allows users to organize and join games/tournaments for various sports.
             // Experience
             section#experience.resume-section
                .resume-section-content
@@ -186,7 +221,7 @@ html(lang='en')
                             .subheading.mb-3 Online Course
                             div Blockchain Development Bootcamp
                         .flex-shrink-0 
-                            span.text-primary August 2002 - May 2006
+                            span.text-primary April 2022 - June 2022
 
             hr.m-0
 

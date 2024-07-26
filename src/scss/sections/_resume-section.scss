@@ -28,6 +28,7 @@ img.project-img {
     height: 100%;
     width: auto;
     margin: auto;
+    border-radius: 0 0 0 0;
 }
 
 @include media-breakpoint-up(md) {
