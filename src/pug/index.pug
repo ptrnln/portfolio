@@ -18,11 +18,20 @@ html(lang='en')
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
-
+        //- style.
+        //-     @font-face {
+        //-         font-family: 'Font Awesome 6 Solid';
+        //-         src: url('/assets/fonts/fa-solid-900.ttf') format('ttf');
+        //-     }
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
     body#page-top
+        style.
+            @font-face {
+                font-family: 'Font Awesome 6 Solid';
+                src: url('assets/fonts/fa-solid-900.ttf') format('truetype');
+            }
 
         // Navigation
         nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
@@ -48,7 +57,10 @@ html(lang='en')
                         a.nav-link.js-scroll-trigger(href='#interests') Interests
                     //- li.nav-item
                     //-     a.nav-link.js-scroll-trigger(href='#awards') Awards
-
+            label.switch(for="theme-switch")
+                //- i.fa-solid.fa-circle-half-stroke
+                input#theme-switch(type="checkbox")
+                span.slider.round
         // Page Content
         .container-fluid.p-0
 
@@ -68,10 +80,6 @@ html(lang='en')
                             i.fab.fa-linkedin-in
                         a.social-icon(href='https://github.com/ptrnln')
                             i.fab.fa-github
-                        //- a.social-icon(href='#!')
-                        //-     i.fab.fa-twitter
-                        //- a.social-icon(href='#!')
-                        //-     i.fab.fa-facebook-f
 
             hr.m-0
 

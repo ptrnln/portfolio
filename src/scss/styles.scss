@@ -17,3 +17,16 @@
 
 // Sections
 @import "./sections/resume-section.scss";
+
+h6, .h6, h6.h6, h5, .h5, h5.h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    color: var(--bs-header-color);
+}
+
+.card {
+    background-color: inherit;
+}
+
+:root, :root * {
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}

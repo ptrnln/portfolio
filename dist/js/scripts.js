@@ -30,5 +30,35 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+    const root = document.documentElement;
+    const themeSwitch = document.body.querySelector('#theme-switch');
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        themeSwitch.checked = null;
+        root.style.setProperty('--bs-body-bg', '#212529');
+        root.style.setProperty('--bs-card-bg', '#2f363d');
+        root.style.setProperty('--bs-card-color', '#7d868f');
+        root.style.setProperty('--bs-header-color', '#fff');
+    } else {
+        themeSwitch.checked = 'checked';
+        root.style.setProperty('--bs-body-bg', '#fff');
+        root.style.setProperty('--bs-card-bg', '#fff');
+        root.style.setProperty('--bs-card-color', '#212529');
+        root.style.setProperty('--bs-header-color', '#343a40');
+    }
+
+
+    themeSwitch.addEventListener('change', function () {
+        if (!this.checked) {
+            root.style.setProperty('--bs-body-bg', '#212529');
+            root.style.setProperty('--bs-card-bg', '#2f363d');
+            root.style.setProperty('--bs-card-color', '#7d868f');
+            root.style.setProperty('--bs-header-color', '#fff');
+        } else {
+            root.style.setProperty('--bs-body-bg', '#fff');
+            root.style.setProperty('--bs-card-bg', '#fff');
+            root.style.setProperty('--bs-card-color', '#212529');
+            root.style.setProperty('--bs-header-color', '#343a40');
+        }
+    });
 
 });
