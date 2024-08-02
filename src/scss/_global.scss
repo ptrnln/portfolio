@@ -39,23 +39,23 @@ p.lead {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 575px) {
-    .card div.background{
-        border-radius: 0.3rem 0.3rem 0 0;
-    }
-}
+// @media screen and (max-width: 575px) {
+//     .card div.background{
+//         border-radius: 0.3rem 0.3rem 0 0;
+//     }
+// }
 
-@media screen and (min-width: 576px) {
-    .card:first-of-type div.background {
-        border-radius: 0.3rem 0 0 0;
-    }
-    .card:last-of-type div.background {
-        border-radius: 0 0.3rem 0 0;
-    }
-    .card:first-of-type:last-of-type div.background {
-        border-radius: 0.3rem 0.3rem 0 0;
-    }
-}
+// @media screen and (min-width: 576px) {
+//     .card:first-of-type div.background {
+//         border-radius: 0.3rem 0 0 0;
+//     }
+//     .card:last-of-type div.background {
+//         border-radius: 0 0.3rem 0 0;
+//     }
+//     .card:first-of-type:last-of-type div.background {
+//         border-radius: 0.3rem 0.3rem 0 0;
+//     }
+// }
 
 @media screen and (min-width: 992px) {
     label.switch {
@@ -69,25 +69,22 @@ p.lead {
 
 @media screen and (max-width: 991px) {
     label.switch {
-        position: absolute;
-        top: $navbar-base-height;
-        right: 0;
+        // position: fixed;
+        // right: 0;
         margin-right: 1rem;
-        margin-top: 1rem;
     }
 }
 
 /* The switch - the box around the slider */
+.switch, .switch * {
+    z-index: 1000;
+}
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
     transition: opacity 0.1s;
-}
-
-.switch * {
-    opacity: 100%;
 }
 
 /* Hide default HTML checkbox */
@@ -152,4 +149,32 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+    appearance: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bs-primary);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M182.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8l256 0c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z' fill='rgb(103, 61, 182)'/></svg>");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--bs-primary);
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 210 320 512'><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d='M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8l256 0c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z' fill='rgb(103, 61, 182)'/></svg>");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--bs-primary);
 }

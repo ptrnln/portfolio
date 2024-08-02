@@ -19,11 +19,13 @@ section.resume-section {
     
     div.background {
         background-color: black;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
     }
 }
 
 img.project-img {
-    max-height: 180px;
+    max-height: 155px;
     max-width: none;
     height: 100%;
     width: auto;

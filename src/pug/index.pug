@@ -10,7 +10,7 @@ html(lang='en')
 
         title Peter Nolan - Portfolio
 
-        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+        link(rel='icon', type='image/png', href='assets/img/favicon.png')
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
@@ -35,6 +35,11 @@ html(lang='en')
 
         // Navigation
         nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+            label.switch(for="theme-switch")
+                //- i.fa-solid.fa-circle-half-stroke
+                input#theme-switch(type="checkbox")
+                span.slider.round
+
             a.navbar-brand.js-scroll-trigger(href='#page-top')
                 span.d-block.d-lg-none Peter Nolan
                 span.d-none.d-lg-block
@@ -55,12 +60,6 @@ html(lang='en')
                         a.nav-link.js-scroll-trigger(href='#education') Education
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#interests') Interests
-                    //- li.nav-item
-                    //-     a.nav-link.js-scroll-trigger(href='#awards') Awards
-            label.switch(for="theme-switch")
-                //- i.fa-solid.fa-circle-half-stroke
-                input#theme-switch(type="checkbox")
-                span.slider.round
         // Page Content
         .container-fluid.p-0
 
@@ -137,37 +136,10 @@ html(lang='en')
                 .resume-section-content
                     h2.mb-5 Projects
 
-                    //- .d-flex.flex-row.flex-md-column.justify-content-between.m-5
-                    //- 
-                    //- .d-flex.flex-md-column.flex-lg-row.row-cols-2.m-5
-                        .card.m-5
-                            div.background.d-flex.flex-row.justify-content-center
-                                img.card-img-top.project-img(src="assets/img/WaveCave_logo.svg")
-                            .card-body
-                                h3.m-2
-                                    a(href='http://wavecave.ph4se.dev/') WaveCave
-                                p.m-2
-                                    | A full-stack clone of the popular music-sharing social media platform SoundCloud.
-
-                    //-     .card.m-5
-                    //-         div.background.d-flex.flex-row.justify-content-center
-                    //-             img.card-img-top.project-img(src="assets/img/TeamMates_logo.svg")
-                    //-         h3.m-2
-                    //-             a(href='http://teammates.onrender.com/') TeamMates
-                    //-         p.m-2
-                    //-             | A sports-centered social media platform that allows users to organize and join games/tournaments for various sports.
-                        
-                    //-     .card.m-5
-                    //-         div.background.d-flex.flex-row.justify-content-center
-                    //-             img.card-img-top.project-img(src="assets/img/TeamMates_logo.svg")
-                    //-         h3.m-2
-                    //-             a(href='http://teammates.onrender.com/') TeamMates
-                    //-         p.m-2
-                    //-             | A sports-centered social media platform that allows users to organize and join games/tournaments for various sports.
                     .container-fluid
                         .card-group
                             .card
-                                div.background.d-flex.flex-row.justify-content-center
+                                div.background.d-flex.flex-row
                                     img.card-img-top.project-img(src="assets/img/WaveCave_logo.svg")
                                 .card-body
                                     h3.m-2.card-header
@@ -176,7 +148,7 @@ html(lang='en')
                                         | A full-stack clone of the popular music-sharing social media platform SoundCloud.
                             
                             .card
-                                div.background.d-flex.flex-row.justify-content-center
+                                div.background.d-flex.flex-row
                                     img.card-img-top.project-img(src="assets/img/TeamMates_logo.svg")
                                 .card-body
                                     h3.m-2.card-header
