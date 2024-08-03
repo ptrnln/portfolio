@@ -30,7 +30,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
     const theme = document.cookie.match(/theme=(\w+)/)?.[1];
 
-    debugger
     if(theme) {
         if(theme === 'dark') {
             themeSwitch.checked = null;
@@ -69,14 +68,14 @@ window.addEventListener('DOMContentLoaded', event => {
             root.style.setProperty('--bs-card-bg', '#2f363d');
             root.style.setProperty('--bs-card-color', '#7d868f');
             root.style.setProperty('--bs-header-color', '#fff');
-            console.log(cookie);
+            // console.log(cookie);
         } else {
             document.cookie = 'theme=light';
             root.style.setProperty('--bs-body-bg', '#fff');
             root.style.setProperty('--bs-card-bg', '#fff');
             root.style.setProperty('--bs-card-color', '#212529');
             root.style.setProperty('--bs-header-color', '#343a40');
-            console.log(document.cookie);
+            // console.log(document.cookie);
         }
     });
 
