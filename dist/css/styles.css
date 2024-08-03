@@ -10955,16 +10955,6 @@ input:checked + .slider:before {
           appearance: none;
 }
 
-::-webkit-scrollbar * {
-  -webkit-appearance: none;
-          appearance: none;
-  opacity: 0.2;
-}
-
-::-webkit-scrollbar:hover *, ::-webkit-scrollbar:active * {
-  opacity: 1;
-}
-
 ::-webkit-scrollbar-thumb {
   background-color: var(--bs-primary);
   border-radius: 1rem;
